@@ -5,7 +5,9 @@ const iniHr = document.querySelector('#dataHora');
 const likedin = document.querySelector('.user-info');
 let date = new Date();
 let hr = date.getHours();
+if (hr < 10) hr = '0' + hr;
 let min = date.getMinutes();
+if (min < 10) min = '0' + min;
 let flag = 0;
 let msgRandom = "Tive uma ideia incrível para um projeto! 😍";
 
@@ -22,6 +24,7 @@ Hour = () => {
 
         let date = new Date();
         hr = date.getHours();
+        if (hr < 10) hr = '0' + hr;
         min = date.getMinutes();
         if (min < 10) min = '0' + min;
     }, 500);
