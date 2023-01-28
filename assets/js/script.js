@@ -17,7 +17,6 @@ openLinkedin = () => {
     })
 }
 
-
 Hour = () => {
 
     setInterval(() => {
